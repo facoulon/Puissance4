@@ -6,3 +6,8 @@ td {
 div {
   height: 100px;
 }
+
+.jaune{
+	background-image: url("../img/jaune.png("); 
+	width: auto;
+}
