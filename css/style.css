@@ -19,3 +19,13 @@ div {
 	background-size: contain;
 
 }
+
+img {
+  float: right;
+  border : 2px solid;
+}
+
+table {
+  clear: both;
+  margin: 1% auto;
+}
