@@ -37,4 +37,17 @@ for (var l = 0; l < nbrColumns; l++){
 }
 
 
-for (m = 0 ; m < 42)
+for (m = 0 ; m < 42 ; m++){
+  for (x = 0; x < nbrColumns; x++){
+    commandTable.children[x].addEventListener("click",function(){
+      if (m % 2 == 0){
+        column[x][column[x].length -1].className = "jaune";
+        playerSelect.src = "../img/rouge.png";
+      } else {
+        column[x][column[x].length -1].className = "rouge";
+        playerSelect.src = "../img/jaune.png";
+        }
+    });
+
+  }
+}
