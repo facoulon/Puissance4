@@ -8,6 +8,7 @@ div {
 }
 
 .jaune{
-	background-image: url("../img/jaune.png("); 
-	width: auto;
+	background-image: url("../img/jaune.png");
+	height: auto;
+  width: auto;
 }
