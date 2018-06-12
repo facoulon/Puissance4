@@ -9,6 +9,13 @@ div {
 
 .jaune{
 	background-image: url("../img/jaune.png");
+	background-size: contain;
+}
+
+.rouge{
+	background-image: url("../img/rouge.png");
 	height: auto;
-  width: auto;
+  	width: auto;
+	background-size: contain;
+
 }

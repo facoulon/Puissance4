@@ -13,28 +13,19 @@ commandTable.setAttribute('border', '2');
 
 for (var i = 0; i < 3; i++) {
   var row = document.createElement("tr");
-  row.className = "row"+i;
+  row.className = "row" + i;
   for (var j = 0; j < 3; j++) {
       var cell = document.createElement("td");
-      cell.className = "cell" +j;
+      cell.className = "cell" + j;
       row.appendChild(cell);
       }
     tbl.appendChild(row);
     }
-    body.appendChild(tbl);
-    tbl.setAttribute("border", "2");
+body.appendChild(tbl);
+tbl.setAttribute("border", "2");
 
-
-// var plateau = [
-//   ['T','C','F','R','K','F','C','T'],
-//   ['P','P','P','P','P','P','P','P'],
-//   [' ',' ',' ',' ',' ',' ',' ',' '],
-//   [' ',' ',' ',' ',' ',' ',' ',' '],
-//   [' ',' ',' ',' ',' ',' ',' ',' '],
-//   [' ',' ',' ',' ',' ',' ',' ',' '],
-//   ['p','p','p','p','p','p','p','p'],
-//   ['t','c','f','k','r','f','c','t'] ];
-//
-// console.log(plateau);
-
-commandTable[0] = "josé";
+var column = [];
+for (var l = 0; l < 3; l++){
+   column[l] = document.getElementsByClassName('cell'+ l);
+  console.log(column);
+}
