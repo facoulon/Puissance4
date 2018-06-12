@@ -36,18 +36,22 @@ for (var l = 0; l < nbrColumns; l++){
    column[l] = document.getElementsByClassName('cell'+ l);
 }
 
+var cpt = 0;
 
-for (m = 0 ; m < 42 ; m++){
-  for (x = 0; x < nbrColumns; x++){
-    commandTable.children[x].addEventListener("click",function(){
-      if (m % 2 == 0){
-        column[x][column[x].length -1].className = "jaune";
+for (x = 0; x < nbrColumns; x++){
+  commandTable.children[x].addEventListener("click",function(){
+                // transformer commandTable.children en liste
+    var colIndex = Array.from(commandTable.children).indexOf(this);
+    if ( cpt < 42 ) {
+      if (cpt % 2 == 0 ){
+        column[colIndex][column[colIndex].length -1].className = "jaune";
         playerSelect.src = "../img/rouge.png";
+        cpt++
       } else {
-        column[x][column[x].length -1].className = "rouge";
+        column[colIndex][column[colIndex].length -1].className = "rouge";
         playerSelect.src = "../img/jaune.png";
+        cpt++
         }
+      }
     });
-
-  }
 }
